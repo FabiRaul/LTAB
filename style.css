@@ -4,13 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height:max-content;
 }
 
 body{
   font-family: 'Poppins', sans-serif;
   background-image: url(liceu.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  height: fit-content;
+  background-color: black;
+  
 }
 
 .top{
@@ -98,6 +102,7 @@ footer{
   backdrop-filter: blur(3px);
   margin-top: 150px;
   margin-bottom: 50px;
+  height:100%;
 }
 
 .credite p{
@@ -110,7 +115,7 @@ footer{
   font-size: 16px;
   font-weight: 500;
   color:white;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(50px);
   padding: 25px;
   margin:50px;
   border: solid 2px white;
@@ -154,15 +159,45 @@ footer{
   text-align: center;
 }
 
+.ist-p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.ist-p p{
+  max-width: 1200px;
+  width: 100%;
+}
+
+.ist-p img{
+  border:solid 3px white;
+  width: 300px;
+}
+
 @media (max-width:1440px){
   body{
     background-position: center;
+  }
+
+  .b-row{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .b-row button{
+    max-width: 200px;
   }
 }
 
 @media (max-width:1080px){
   body{
-    background-position:45% -300px;
+    background-position:45% -200px;
+    background-size: 2000px;
   }
 
   .titlu p{
@@ -179,11 +214,16 @@ footer{
     width: 700px;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-around;
+  }
+
+  .b-row button{
+    width: 200px;
+    font-size: 18px;
   }
 
   .credite p{
-    flex-direction: column;
+    flex-direction: row;
     max-width: 800px;
     justify-content: center;
     align-items: center;
@@ -204,11 +244,16 @@ footer{
   }
 
   .b-row{
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    align-items:center;
     justify-content: space-evenly;
-    align-items: center;
-    width: 500px;
+    
+  }
+
+  .b-row button{
   }
 
   .credite p{
