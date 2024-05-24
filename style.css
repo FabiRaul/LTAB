@@ -191,7 +191,7 @@ footer{
   }
 }
 
-@media (max-width:720px){
+@media (max-width:800px){
 
   .titlu p{
     font-size: 30px;
@@ -227,7 +227,7 @@ footer{
   }
 
   .b-row{
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
